@@ -1,0 +1,37 @@
+/*
+AUTHOR INFO 
+NAME : ISLAM SAEED 
+EMAIL : ISLAM.S.MHMD1998@GMAIL.COM
+*/
+
+/* STANDARD  SYNTAX FOR THEME 
+
+
+FIRST COLOR : #7ACEC3 ;
+SECOND COLOR : #EBB240;
+THIRD COLOR : #FFFFFF ;
+FOURTH COLOR : #DFE0D9 ;
+FIFTH COLOR : #717D86 ;
+SIXTH COLOR : #CECECE ;
+SEVENTH COLOR :#FF9B6D ;
+NINGTH COLOR : #D4EDBF ;
+
+STANDARD FONT : font-family: 'Josefin Sans', sans-serif; ;
+
+HEADERS FONT : font-family: 'Anton', sans-serif; ;
+
+*/
+
+
+*
+{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.upper-bar 
+{
+    background-color:#7ACEC3;
+    color:#FFFFFF;
+}
