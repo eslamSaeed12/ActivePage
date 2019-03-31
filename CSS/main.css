@@ -21,13 +21,15 @@ HEADERS FONT : font-family: 'Anton', sans-serif; ;
 */
 
 
-header
+header 
 {
-    height: 550px;
+    height: 450px;
+    background: url("../IMGS/background.png") center center no-repeat;
+    background-size: cover;
 }
-header .upper-header
+header .background-container 
 {
-    background: url("../IMGS/background.png")
+    text-transform: uppercase;
 }
 
 /* styling uper bar div */
