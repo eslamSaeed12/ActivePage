@@ -23,7 +23,7 @@ HEADERS FONT : font-family: 'Anton', sans-serif; ;
 
 header
 {
-    background:#E9EAE2;
+    height: 550px;
 }
 header .upper-header
 {
