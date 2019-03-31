@@ -1,0 +1,7 @@
+ml-auto  > left
+mr-auto > right
+m-auto > center
+justify-content-md-center
+col-auto ÚÑÖ ÊáŞÇÆí 
+pl-screen-grid-size 
+px-screen-grid-size

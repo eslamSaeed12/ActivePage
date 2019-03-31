@@ -26,12 +26,85 @@ HEADERS FONT : font-family: 'Anton', sans-serif; ;
 *
 {
     font-family: 'Josefin Sans', sans-serif;
-    text-transform: capitalize;
 }
 
+/* styling uper bar div */
 
 .upper-bar 
 {
-    background-color:#7ACEC3;
+    background-color:#FFFFFF ;
+    color:#667581;
+    font-size: smaller;
+}
+.upper-bar > div
+{
+    margin-top: 10px;
+    text-transform: lowercase !important;
+}
+.upper-bar > div > div > div button
+{
+    font-size: smaller;
+    background-color: transparent;
+    border-color: #FF9B6D;
+    color:#FF9B6D;
+    padding:0.175rem .35rem;
+    border-radius: 0;
+
+}
+.upper-bar  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+{
+    background-color: #717D86;
+    border-color: #717D86;
+}
+.upper-bar  .btn-primary.focus, .btn-primary:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(255, 86, 34, 0.534);
+}
+.upper-bar .btn-primary:hover
+{
+    background-color: #FF9B6D;
+    border-color: #FF9B6D;
     color:#FFFFFF;
 }
+
+@media (max-width:991px)
+{
+    .upper-bar > div > div > div 
+    {
+        text-align: center !important;
+    }
+    .upper-bar > div > div > div:first-of-type
+    {
+        margin-bottom: 15px;
+    }
+
+}
+.upper-bar .information  div:first-of-type i
+{
+    margin-right: 5px;
+    margin-left:5px;
+    font-size: medium;
+    margin-bottom:5px;
+    color:#FF9B6D;
+}
+
+.upper-bar .information  div:last-of-type i
+{
+    font-size: medium;
+}
+.upper-bar .information p
+{
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 0;
+}
+@media(max-width:429px){
+
+    .upper-bar .information p
+    {
+        display:block;
+    }
+}
+
+/* end styling uper bar div */
