@@ -22,6 +22,7 @@ HEADERS FONT : font-family: 'Anton', sans-serif; ;
 
 /* styling uper bar div */
 
+
 header 
 {
     background: url("../IMGS/background.png") center center no-repeat;
@@ -239,43 +240,37 @@ border-radius: 10px;
 {
     color:#f7f1e3;
 }
-.testimon .cont-relative
+
+
+/* slider */
+.testimon .testi-Container
 {
     position: relative;
 }
-.testimon ul
+.testimon .testi-Container .testi-item img
 {
-    position: absolute;
-    bottom:5%;
-    left: 80%;
+    cursor: pointer;
 }
+
+
 .testimon ul li
 {
     cursor: pointer;
 }
-.testimon .cont-relative .testi-item
-{
+
+@media (max-width:567px){
+    .testimon .row .testi-item .testi-content .lead
+    {
         font-size:1em !important;
     }
-.testimon .active
-{   
-    min-width: 100%;
-    max-width: 100% !important;
 }
 
 /* end testimonials section */
-
-
 /* download */
 
-.download .btn-primary
+.download button.btn.btn-primary.bttn-fill.bttn-md.bttn-danger.bttn-no-outline.my-4.botn
 {
-    background: #ff5964;
-    border-color: #ff5964;
-    border-radius: 0;
-    text-transform: uppercase;
-    margin-top:50px;
-    padding:10px 30px;
+    text-transform: uppercase !important;
 }
 .download .btn-primary.focus, .btn-primary:focus,
 .download .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus
