@@ -55,6 +55,20 @@ header  .content .h1
 {
     margin-bottom: 20px;
 }
+@media(max-width:567px)
+{
+    header  .content .h1
+    {
+         font-size:2rem;
+    }
+    header  .content h6
+    {
+        font-size: 1rem
+    }
+    header .content{
+        margin-top:2em;
+    } 
+}
 header .content
 {
     color:#f7f1e3;
@@ -105,8 +119,8 @@ border-radius: 10px;
         }
         header .navbar .active
         {
-            border-radius:0 !important;
-            background: transparent;
+            border-radius:5px !important;
+            background: #ff5964;
             font-weight: bold;
         }
 }
@@ -219,10 +233,7 @@ border-radius: 10px;
 {
     background: #53354A;
 }
-.testimon .cont-relative .testi-item
-{
-    
-}
+
 .testimon .testi-content p,
 .testimon .testi-content small
 {
@@ -235,11 +246,92 @@ border-radius: 10px;
 .testimon ul
 {
     position: absolute;
-    bottom: 33%;
+    bottom:5%;
     left: 80%;
 }
-.testimon .testi-content .active
+.testimon ul li
 {
-    display: block;
+    cursor: pointer;
 }
+.testimon .cont-relative .testi-item
+{
+    width:0 !important;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+.testimon .active
+{   
+    min-width: 100%;
+    max-width: 100% !important;
+}
+
 /* end testimonials section */
+
+
+/* download */
+
+.download .btn-primary
+{
+    background: #ff5964;
+    border-color: #ff5964;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top:50px;
+    padding:10px 30px;
+}
+.download .btn-primary.focus, .btn-primary:focus,
+.download .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus
+
+{
+    box-shadow:0 0 0 0.2rem #ff5964(255, 38, 38, 0.5);
+}
+
+/* end download */
+
+
+/* start footer */
+
+
+.footer
+{
+    background-color: #3A3E64;
+    color:#f7f1e3 !important;
+}
+.footer h6
+{
+    text-transform: uppercase;
+}
+
+.footer .foter-item address,
+.footer small
+{
+    color:rgb(166, 172, 177) !important
+}
+.footer a
+{
+    color:unset !important;
+}
+
+@media (max-width:767px){
+
+    .foter-item
+    {
+        margin-bottom: 2em;
+    }
+}
+/* end footer */
+
+/* start copyrights */
+
+.copyRights
+{
+    background: #313454;
+    color:#6C7279;
+}
+.copyRights strong
+{
+color:#ff5964;
+text-transform: capitalize;
+}
+
+/* end copyrights */
