@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <!-- main CSS -->
     <link rel="stylesheet" href="CSS/main.css">
+    <!-- hover css -->
+    <link rel="stylesheet" href="CSS/hover-min.css">
+    <!-- bttn css -->
+    <link rel="stylesheet" href="CSS/bttn.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="FONTS/all.min.css">
     <!-- joseFinSans CSS -->
@@ -20,9 +24,9 @@
     <header>
       <div class="container background-container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">active <span>box</span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <a class="navbar-brand hvr-grow" href="#">active <span>box</span></a>
+          <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
           </button>
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,13 +34,13 @@
               <li class="nav-item active">
                 <a class="nav-link" href="#">features <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item hvr-underline-from-right">
                 <a class="nav-link" href="#">works</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item hvr-underline-from-right">
                 <a class="nav-link" href="#">testimonials</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item hvr-underline-from-right">
                 <a class="nav-link" href="#">download</a>
               </li>
             </ul>
@@ -44,14 +48,281 @@
         </nav> <!-- end of nav bar -->
 
         <!-- start conent section -->
-        <div class="content">
-          <h2 class="h1">YOUR FAVORITE ONE PAGE MULTI PURPOSE TEMPLATE</h2>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</h5>
-           <button class="btn">find out more</button>
+        <div class="content text-center">
+          <h2 class="h1">YOUR FAVORITE ONE PAGE <br>MULTI PURPOSE TEMPLATE</h2>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</h6>
+           <button class="btn btn-primary bttn-fill bttn-md bttn-danger bttn-no-outline">find out more</button>
         </div>
       </div> <!-- end of container -->
     </header>
-    <!-- end UPPER BAR -->  
+    <!-- end UPPER BAR --> 
+    
+    <!-- section of features -->
+
+    <section class="features py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="feat col-lg-4 col-sm-6 text-center">
+            <i class="fa fa-edit"></i>
+            <h6>EASILY CUSTOMISED</h6>
+             <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+              </p>
+          </div>
+
+          <div class="feat col-lg-4 col-sm-6 text-center">
+            <i class="fa fa-desktop"></i>
+             <h6>RESPONSIVE READY</h6>
+               <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla
+               </p>
+          </div>
+
+          <div class="feat col-lg-4 col-sm-6 text-center">
+            <i class="fa fa-lightbulb"></i>
+            <h6>MODERN DESIGN</h6>
+            <p>
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+          </div>
+
+          <div class="feat  col-lg-4 col-sm-6 text-center">
+            <i class="fab fa-react"></i>
+            <h6>CLEAN CODE</h6>
+            <p>
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+          </div>
+
+          <div class="feat   col-lg-4 col-sm-6 text-center">
+            <i class="fa fa-shipping-fast"></i>
+            <h6>READY TO SHIP</h6>
+            <p>
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+          </div>
+
+          <div class="feat  col-lg-4  col-sm-6 text-center">
+            <i class="fa fa-download"></i>
+            <h6>DOWNLOAD FOR FREE</h6>
+            <p>
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+          </div>
+
+        </div>  <!-- end of row -->
+      </div> <!-- end of container -->
+    </section>
+    <!-- end  of features -->
+
+
+    <!-- section gallery -->
+
+    <section class="gallery py-5">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="view-overlay img-item col-lg-3 col-md-4 col-sm-6 px-0">
+            <img src="IMGS/wotk1.png" class="img-fluid"  alt="work1"> <!-- 1 -->
+            <div class="mask justify-content-center d-flex align-items-center ">
+                <p class="white-text text-center px-1 "> Text caption of image</p>
+            </div>
+          </div>
+
+          <div class="view-overlay img-item col-lg-3 col-md-4 col-sm-6 px-0">
+              <img src="IMGS/work 2.png" class="img-fluid"  alt="work2"> <!-- 2 -->
+              <div class="mask justify-content-center d-flex align-items-center">
+                  <p class="white-text text-center px-1 "> Text caption of image</p>
+              </div>
+          </div>
+
+          <div class=" view-overlay img-item col-lg-3 col-md-4 col-sm-6 px-0">
+                <img src="IMGS/work 4.png" class="img-fluid"  alt="work4"> <!-- 3 -->
+                <div class="mask justify-content-center d-flex align-items-center">
+                    <p class="white-text text-center px-1 "> Text caption of image</p>
+                </div>
+          </div>
+
+          <div class="view-overlay img-item col-lg-3  col-md-4 col-sm-6 px-0">
+            <img src="IMGS/work 5.png" class="img-fluid"  alt="work5">  <!-- 4 -->
+            <div class="mask justify-content-center d-flex align-items-center">
+                <p class="white-text text-center px-1 "> Text caption of image</p>
+            </div>
+          </div>
+
+          <div class=" view-overlay img-item col-lg-3 col-md-4 col-sm-6 px-0">
+              <img src="IMGS/work 6.png" class="img-fluid"  alt="work6">  <!-- 5 -->
+              <div class="mask justify-content-center d-flex align-items-center">
+                  <p class="white-text text-center px-1 "> Text caption of image</p>
+              </div>
+          </div>
+
+          <div class=" view-overlay img-item col-lg-3 col-md-4 col-sm-6 px-0">
+              <img src="IMGS/work 7.png" class="img-fluid"  alt="work7">  <!-- 6 -->
+              <div class="mask justify-content-center d-flex align-items-center">
+                  <p class="white-text text-center px-1 "> Text caption of image</p>
+              </div>
+          </div>
+
+          <div class="view-overlay img-item col-lg-3 col-md-6 col-sm-6 px-0">
+              <img src="IMGS/work 8.png" class="img-fluid "  alt="work8">  <!-- 7 -->
+              <div class="mask justify-content-center d-flex align-items-center">
+                  <p class="white-text text-center px-1 "> Text caption of image</p>
+              </div>
+          </div>
+
+          <div class="view-overlay img-item col-lg-3 col-md-6 col-sm-6 px-0">
+              <img src="IMGS/work 2.png" class="img-fluid hoverable"  alt="work2">  <!-- 8 -->
+              <div class="mask justify-content-center d-flex align-items-center">
+                  <p class="white-text text-center px-1 "> Text caption of image</p>
+              </div>
+          </div>
+        </div> <!-- end of row -->
+      </div> <!-- end of container fluid -->
+    </section>
+
+    <!-- end section gallery -->
+
+    <!-- start our team section -->
+
+    <section class="our-team py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="member col-lg-3 col-md-3 col-sm-6">
+            <img src="IMGS/member2.png" alt="Ruth Woods" class="img-fluid ">
+            <h6 class="mt-4">Ruth Woods</h6>
+            <small>FOUNDER, CEO</small>
+            <p class="mt-4">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+            </p>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div> <!-- end of member 1 -->
+
+          <div class="member col-lg-3 col-md-3 col-sm-6">
+              <img src="IMGS/member1.png" alt="Beverly Little" class="img-fluid ">
+              <h6 class="mt-4">Beverly Little</h6>
+              <small>DATA SCIENTIST</small>
+              <p class="mt-4">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+          </div> <!-- end of member 2 -->
+
+          <div class="member col-lg-3 col-md-3 col-sm-6">
+              <img src="IMGS/member3.png" alt="Victoria Valdez" class="img-fluid ">
+              <h6 class="mt-4">Victoria Valdez</h6>
+              <small>UI DESIGNER</small>
+              <p class="mt-4">
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+          </div> <!-- end of member 3 -->
+
+          <div class="member col-lg-3 col-md-3 col-sm-6">
+              <img src="IMGS/member4.png" alt="Timothy Reed" class="img-fluid ">
+              <h6 class="mt-4">Timothy Reed</h6>
+              <small class="">CO-FOUNDER, DEVELOPER</small>
+              <p class="mt-4">
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item hvr-fade"><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+          </div> <!-- end of member 4 -->
+
+        </div> <!-- end of row -->
+      </div> <!-- end of conainer -->
+    </section>
+
+    <!-- end our team section -->
+
+    <!-- start testimonials section -->
+
+
+    <section class="testimon py-5">
+      <div class="container-fluid cont-relative">
+            <div class="testi-item">
+              <div class="row">
+              <div class="testi-img col-lg-8 px-0 ">
+                <img src="IMGS/Clip.png" alt="testimon-item " class="img-fluid">
+              </div>
+              <div class="testi-content col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                <p class="lead">
+                    “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                </p>
+                <small>SUSAN SIMS, INTERACTION DESIGNER AT XYZ</small>
+              </div>
+          </div> <!--end of row -->
+        </div> <!-- end of testi item 1 -->
+        <div class="testi-item">
+            <div class="testi-img">
+              <img src="" alt="" class="">
+            </div>
+            <div class="testi-content">
+              <p class="lead">
+                
+              </p>
+            </div>
+        </div> <!-- end of testi item 2 -->
+        <div class="testi-item">
+            <div class="testi-img">
+              <img src="" alt="" class="">
+            </div>
+            <div class="testi-content">
+              <p class="lead">
+                
+              </p>
+            </div>
+        </div> <!-- end of testi item 3 -->
+        <div class="testi-item">
+            <div class="testi-img">
+              <img src="" alt="" class="">
+            </div>
+            <div class="testi-content">
+              <p class="lead">
+                
+              </p>
+            </div>
+        </div> <!-- end of testi item 4 -->
+        <div class="testi-item">
+            <div class="testi-img">
+              <img src="" alt="" class="">
+            </div>
+            <div class="testi-content">
+              <p class="lead">
+                
+              </p>
+            </div>
+        </div> <!-- end of testi item 5 -->
+        <ul class="list-inline list-unstyled">
+            <li class="fa fa-circle"></li>
+            <li class="fa fa-circle"></li>
+            <li class="fa fa-circle"></li>
+            <li class="fa fa-circle"></li>
+            <li class="fa fa-circle"></li>
+          </ul>
+      </div> <!-- end of conatiner -->
+    </section>
+
+
+    <!-- end testimonials section -->
+
     <script src="JS/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="JS/bootstrap.min.js"></script>
